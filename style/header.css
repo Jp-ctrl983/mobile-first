@@ -1,0 +1,146 @@
+.AluraBooks__menu-hamburger{
+    width: 24px;
+    height: 24px;
+    background: url("../imgs/Menu.svg") no-repeat center;
+    display: inline-block;
+    border-radius: 2px;
+    
+}
+
+.Cabesalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.comtainer{
+    display: flex;
+    align-items: center;
+}
+
+.comtainer-img{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.comtainer-botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background: var(--azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.comtainer-botao{
+    display: none;
+}
+
+.container__titulo{
+    display: none;
+}
+
+.opçoes{
+    display:none;
+}
+
+.container__texto{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .container__titulo,
+    .container__titulo--negrito{
+        font-family: var(--font-Josefin-Sans);
+        font-size: 30px;
+        
+    }
+
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opçoes{
+        display: flex;
+    }
+
+    .opcoes__itens{
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__none{
+        display: none;
+    }
+
+    .AluraBooks__menu-hamburger{
+        display: none;
+    }
+
+    .opçoes__botão:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    .opçoes__botão{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1204px) {
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--azul-dois);
+        font-size: 16px;
+    }
+
+    .container__texto{
+        display: block;
+    }
+
+    .Cabesalho{
+        padding: 0 4em;
+    }
+
+    .opçoes{
+        margin-right: auto;
+        margin-left: 1em;
+    }
+    
+}

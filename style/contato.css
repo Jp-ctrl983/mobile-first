@@ -1,0 +1,123 @@
+.contato__titulo{
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo,
+.contato__texto{
+    background: var(--azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto{
+    font-weight: 300;
+    margin: 1em 0;
+    padding-left: 1em;
+}
+
+.contato__email{
+    padding: 1em;
+    border:1px solid var(--azul-dois);
+    border-radius: 24px;
+    width: 86%;
+    margin-bottom: 20px;
+    color: var(--azul-dois);
+}
+
+.contato__email::placeholder{
+    background: url("../imgs/Email.svg") no-repeat;
+    padding-left: 2em;
+    font-family: var(--font-principal);
+    color: var(--azul-dois);
+    font-size: 16px;
+}
+
+hr{
+    margin: 0;
+}
+
+.rodape{
+    padding: 1em;
+}
+
+.rodape__titulo{
+    color: var(--azul-dois);
+    font-weight: 400;
+}
+
+.lista__rodape{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .contato {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .contato__titulo{
+        font-size:24px;
+    }
+
+    .contato__descrição{
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__email{
+        width: 30%;
+    }
+
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista__rodape{
+        display: block;
+    }
+
+    .lista-rodape__titulo{
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--azul-dois);
+    }
+
+    .lista-rodape__item{
+        margin: .6em 0 .4em 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .lista__todape-link{
+        text-decoration: none;
+        color: var(--azul-dois);
+        padding-left: .3em;
+    }
+
+    .rodape__titulo{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1204px) {
+    .contato{
+        padding: 3em 20vw;
+    }
+
+    .lista-rodape__item{
+        padding: .4em;
+    }
+
+    .rodape{
+        padding: 4em;
+    }
+} 
